@@ -3,6 +3,67 @@ Colors used:
 Primary Color (Blue): #0053e3;
 Secondary Color (Orange): #e75e29;
 */
+#footer h4 {
+  margin: 0;
+  
+}
+
+
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#hero {
+  background-color: #2f4858;
+}
+footer {
+  background-color:#2f4858;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.logo {
+  max-width: 250px;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.container {
+  padding: 0 15px;
+}
+/* Layout styling */
+header {
+  background-color: #ff44c4;
+
+}
+header {
+
+  border-bottom: 3px solid #e75e29;
+}
+header {
+  background-color: #ff44c4;
+  text-align: center;
+  padding: 10px;
+}
+header {
+  background-color: #2f4858;
+}
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
@@ -23,7 +84,7 @@ a:focus {
   text-decoration: underline;
 }
 a {
-  color: #0053e3;
+  color: #e75e29;
   text-decoration: none; /* No underlining */
 }
 a:hover {
@@ -45,7 +106,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4 {
