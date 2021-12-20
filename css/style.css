@@ -3,12 +3,10 @@ Colors used:
 Primary Color (Blue): #0053e3;
 Secondary Color (Orange): #e75e29;
 */
+
 #footer h4 {
   margin: 0;
-  
 }
-
-
 
 #hero {
   background-color: #ffe4c4;
@@ -20,7 +18,7 @@ Secondary Color (Orange): #e75e29;
   background-color: #2f4858;
 }
 footer {
-  background-color:#2f4858;
+  background-color: #2f4858;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -50,10 +48,8 @@ nav > ul {
 /* Layout styling */
 header {
   background-color: #ff44c4;
-
 }
 header {
-
   border-bottom: 3px solid #e75e29;
 }
 header {
@@ -94,22 +90,24 @@ a:hover {
 svg {
   width: 3%;
   fill: darkorange;
-
-  }
+}
 
 img {
   width: 100%;
 }
 body {
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 h1 {
@@ -120,6 +118,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  margin: 0;
 }
 
 h3 {
@@ -129,12 +128,13 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
-}
-body{
-  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 body {
-  background-color: #ffffff
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #ffffff;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -145,4 +145,92 @@ body {
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  #hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+  /* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+  @media only screen and (min-width: 1024px) {
+  }
+
+  /* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
