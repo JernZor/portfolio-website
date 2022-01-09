@@ -11,8 +11,7 @@ Secondary Color (Orange): #e75e29;
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+
 }
 #hero {
   background-color: #2f4858;
@@ -30,9 +29,43 @@ nav > ul > li {
   display: inline-block;
 }
 nav > ul {
-  list-style-type: none;
-  padding: 0;
+  margin: 1em 0;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #e75e29;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 .logo {
   max-width: 250px;
 }
@@ -219,6 +252,15 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   #hero span {
     display: block;
   }
@@ -255,4 +297,3 @@ Extra-large devices (1920px or larger)
 .berlin-illustration {
   width: 500px;
   height: 500px;
-}
